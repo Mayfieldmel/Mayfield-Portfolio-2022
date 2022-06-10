@@ -1,3 +1,22 @@
+:root {
+    --main-bg-color: #ebebf5;
+    --primary-color:#2f2f40;
+    --secondary-color:#abeded;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+h1{
+    background-color: var(--secondary-color);
+}
 .portrait img {
     width: 200px;
     height: 250px;
