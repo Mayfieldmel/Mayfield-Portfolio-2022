@@ -1,7 +1,13 @@
 :root {
     --main-bg-color: #ebebf5;
     --primary-color:#2f2f40;
-    --secondary-color:#abeded;
+    --secondary-color:#abe0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,10 +18,47 @@ body {
 
 header {
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60px;
+    padding-right: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-h1{
+header h1 {
     background-color: var(--secondary-color);
+    width: 300px;
+    flex: 1, 300px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 5px 10px;
+}
+
+.li2 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 10px;
 }
 .portrait img {
     width: 200px;
