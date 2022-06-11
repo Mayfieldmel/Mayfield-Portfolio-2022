@@ -25,8 +25,8 @@ li {
 a {
     color: var(--primary-color);
     text-decoration: none;
-    border-bottom: 2px solid var(--primary-color);
-    padding: 10px 10px;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 5px 10px;
 }
 
 /* Style header */
@@ -136,9 +136,6 @@ h3 {
     border-left: 3px solid var(--primary-color);
 }
 
-.work-links p {
-    font-size: 10px;
-}
 
 /* style About Me section */
 article {
@@ -150,30 +147,86 @@ article {
     border-bottom: none;
 }
 
-.section-content ul {
+.work-links p {
+    font-size: 10px;
+}
+
+.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 80%;
+    padding: 0 20px;
+    border-left: 3px solid var(--primary-color);
+    flex-direction: row;
+    height: 450px;
+}
+
+.section-content ul,
+.work-content ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+    
 }
 
-.section-content ul li {
-    padding: 10px;
-    margin: 10px;
+.work-content ul li {
+    margin: 5px;
+    padding: 0;
     display: flex;
 }
 
 .surf-report {
-    background-image: url(../images/crop-surf-report.png);
-    width: 100%;
+    background-image: url(../images/surf-report.jpg);
     height: 50%;
+    width: 100%;
+    border: 5px solid var(--secondary-color);
+    background-size: cover;
+}
+
+.led-wall, 
+.calculator, 
+.pastel-puzzles, 
+.run-buddy {
+    height: 100px;
+    width: 48%;
+    border: 5px solid var(--secondary-color);
+}
+
+.led-wall {
+    background-image: url(../images/LED-wall-red.jpeg);
+}
+
+.calculator {
+    background-image: url(../images/crop-calculator.png);
+}
+
+.pastel-puzzles {
+    background-image: url(../images/crop-pastel-puzzles.png);
+}
+
+.run-buddy {
+    background-image: url(../images/crop-screen-runbuddy.png);
 }
 
 .text-box {
     background-color: var(--secondary-color);
     padding: 10px;
+    position: relative;
+    bottom: 0px;
 }
 
 /* style Contact Me section */
+footer {
+    margin-top: 50px;
+}
+
 footer .section-header {
     left: -10px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
