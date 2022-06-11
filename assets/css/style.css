@@ -119,29 +119,59 @@ header nav ul li a {
 
 h3 {
     font-size: 30px;
-    padding-right: 5px;
     width: 100px;
     height: 100%;
     position: relative;
-    left: 125px;
+    left: 135px;
 }
 
 /* style content sections on the right */
 .section-content {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     flex: 3 80%;
-    padding-left: 20px;
+    padding: 0 20px;
     border-left: 3px solid var(--primary-color);
 }
 
+.work-links p {
+    font-size: 10px;
+}
+
+/* style About Me section */
+article {
+    flex-direction: column;
+}
 
 /* style portfolio works */
+.work-links {
+    border-bottom: none;
+}
+
+.section-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-content ul li {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
 .surf-report {
     background-image: url(../images/crop-surf-report.png);
-    background-size: cover;
-    width: 400px;
-    height: 250px;
-    
+    width: 100%;
+    height: 50%;
+}
+
+.text-box {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+/* style Contact Me section */
+footer .section-header {
+    left: -10px;
 }
