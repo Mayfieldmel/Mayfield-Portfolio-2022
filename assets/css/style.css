@@ -111,7 +111,7 @@ header nav ul li a {
 
 /* style content headers on the left */
 .section-header {
-    flex: 1 30%;
+    flex: 1 20%;
     text-align: right;
     padding-right: 5px;
     border-right: 3px solid var(--primary-color);
@@ -125,7 +125,7 @@ h3 {
 .section-content {
     display: flex;
     flex-direction: column;
-    flex: 4 70%;
+    flex: 4 80%;
     padding: 0 5px 0 30px;
 }
 
@@ -230,3 +230,20 @@ h4 {
 .run-buddy:hover {
     background-image: url(../images/crop-screen-runbuddy.png);
 }
+
+/* Contact Section or Footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    flex: 4 80%;
+}
+.footer-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.footer-content ul li {
+    margin: 20px;
+}
+
