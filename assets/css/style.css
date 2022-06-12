@@ -167,6 +167,7 @@ article {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    position: relative;
     
 }
 
@@ -258,3 +259,56 @@ footer ul {
     background-image: url(../images/crop-screen-runbuddy.png);
 }
 
+/* Media Queries */
+
+/* screen size 1230 or smaller */
+@media screen and (max-width: 1230px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+        
+    }
+
+    .section-header {
+        width: auto;
+        position: relative;
+        left: 0;
+        text-align: left;
+       
+    }
+    
+    h3 {
+        font-size: 30px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .section-content,
+    .work-content {
+        border-top: 3px solid var(--primary-color);
+        border-left: none;
+        padding: 0;
+        
+    }
+
+    .surf-report .text-box {
+        top: 75px;
+    }
+
+    footer {
+        position: relative;
+        top: 50px; 
+    }
+
+    footer .section-header,
+    .section-content {
+        position: relative;
+        top: 30px;
+        padding-top: 15px;
+    }
+
+}
