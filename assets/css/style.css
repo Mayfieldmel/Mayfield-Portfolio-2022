@@ -37,7 +37,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     height: 60px;
-    padding-right: 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -47,17 +46,16 @@ header {
 header h1 {
     background-color: var(--secondary-color);
     width: 300px;
-    flex: 1, 30%;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 15px;
+    
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    margin-bottom: 5px;
+    padding-right: 40px;
 }
 
 header nav ul li {
@@ -68,7 +66,6 @@ header nav ul li a {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
-
 
 /* style hero */
 .hero {
@@ -85,7 +82,7 @@ header nav ul li a {
     text-align: right;
     margin: 20px 0px 20px 65px;
     position: relative;
-    right: 15px;
+    right: 10px;
 }
 
 .portrait img {
@@ -107,35 +104,29 @@ header nav ul li a {
 .section {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 20px;
+    margin: 20px 40px;
+    height: auto;
+    justify-content: space-between;
 }
 
 /* style content headers on the left */
 .section-header {
-    width: 100px;
-    height: 100%;
-    flex: 1 20%;
+    flex: 1 30%;
     text-align: right;
-    position: relative;
+    padding-right: 5px;
+    border-right: 3px solid var(--primary-color);
 }
 
 h3 {
     font-size: 30px;
-    width: 100px;
-    height: 100%;
-    position: relative;
-    left: 135px;
 }
 
 /* style content sections on the right */
 .section-content {
     display: flex;
-    flex-wrap: wrap;
-    flex: 3 80%;
-    padding: 0 20px;
-    border-left: 3px solid var(--primary-color);
+    flex: 4 70%;
+    padding-left: 30px;
 }
-
 
 /* style About Me section */
 article {
@@ -151,166 +142,10 @@ article {
     font-size: 10px;
 }
 
-.work-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 3 80%;
-    padding: 0 20px;
-    border-left: 3px solid var(--primary-color);
-    flex-direction: row;
-    height: 450px;
-}
-
-.section-content ul,
-.work-content ul {
+.section-content ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     position: relative;
-    
-}
-
-.work-content ul li {
-    margin: 5px;
-    padding: 0;
-    display: flex;
-}
-
-.surf-report {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/surf-report.jpg);
-    height: 50%;
-    width: 100%;
-    border: 5px solid var(--secondary-color);
-    background-size: cover;
-}
-
-.led-wall, 
-.calculator, 
-.pastel-puzzles, 
-.run-buddy {
-    height: 100px;
-    width: 48%;
-    border: 5px solid var(--secondary-color);
-    background-size: cover;
-}
-
-.led-wall {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/LED-wall-red.jpeg);
-}
-
-.calculator {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-calculator.jpg);
-}
-
-.pastel-puzzles {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-pastel-puzzles.png);
-}
-
-.run-buddy {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/crop-screen-runbuddy.png);
-}
-
-.text-box {
-    background-color: var(--secondary-color);
-    padding: 10px;
-    position: relative;
-    top: 25px;
-    right: 12px;
-}
-
-.surf-report .text-box {
-    top: 150px;
-}
-
-/* style Contact Me section */
-footer {
-    margin-top: 50px;
-}
-
-footer .section-header {
-    left: -10px;
-}
-
-footer ul {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-}
-
-/* Work section Psuedo classes (higlight hover) */
-.surf-report:hover {
-    background-image: url(../images/surf-report.jpg);
-}
-
-.led-wall:hover {
-    background-image: url(../images/LED-wall-red.jpeg);
-}
-
-.calculator:hover {
-    background-image: url(../images/web-calculator.jpg);
-}
-
-.pastel-puzzles:hover {
-    background-image: url(../images/web-pastel-puzzles.png);
-}
-
-.run-buddy:hover {
-    background-image: url(../images/crop-screen-runbuddy.png);
-}
-
-/* Media Queries */
-
-/* screen size 1230 or smaller */
-@media screen and (max-width: 1230px) {
-    .section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 20px 20px;
-        
-    }
-
-    .section-header {
-        width: auto;
-        position: relative;
-        left: 0;
-        text-align: left;
-       
-    }
-    
-    h3 {
-        font-size: 30px;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        left: 0;
-    }
-
-    .section-content,
-    .work-content {
-        border-top: 3px solid var(--primary-color);
-        border-left: none;
-        padding: 0;
-        
-    }
-
-    .surf-report .text-box {
-        top: 75px;
-    }
-
-    footer {
-        position: relative;
-        top: 50px; 
-    }
-
-    footer .section-header,
-    .section-content {
-        position: relative;
-        top: 30px;
-        padding-top: 15px;
-    }
-
-    
-
 }
