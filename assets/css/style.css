@@ -104,7 +104,7 @@ header nav ul li a {
 .section {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 40px;
+    margin: 40px 40px;
     height: auto;
     justify-content: space-between;
 }
@@ -124,28 +124,98 @@ h3 {
 /* style content sections on the right */
 .section-content {
     display: flex;
+    flex-direction: column;
     flex: 4 70%;
-    padding-left: 30px;
+    padding: 0 5px 0 30px;
 }
 
-/* style About Me section */
-article {
-    flex-direction: column;
+/* style bio */
+p {
+    font-size:  14px;
 }
 
 /* style portfolio works */
 .work-links {
     border-bottom: none;
+    padding: 0;
 }
 
-.work-links p {
-    font-size: 10px;
+.surf-report {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/surf-report.jpg);
+    border: 5px solid var(--secondary-color);
+    background-size: cover;
+    height: 200px;
 }
 
 .section-content ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 200px;
+    margin: 10px 0 10px 0;
     justify-content: space-between;
-    position: relative;
+}
+
+.section-content ul li {
+    width: 49%;
+    height: 50%;
+    margin: 5px 0;
+}
+
+.text-box {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.work-links p {
+    font-size: 12px;
+}
+
+
+/* style work images */
+.led-wall, 
+.calculator, 
+.pastel-puzzles, 
+.run-buddy {
+    border: 5px solid var(--secondary-color);
+    background-size: cover;
+    height: 100%;   
+}
+
+.led-wall {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/LED-wall-red.jpeg);
+}
+
+.calculator {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-calculator.jpg);
+}
+
+.pastel-puzzles {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-pastel-puzzles.png);
+}
+
+.run-buddy {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/crop-screen-runbuddy.png);
+}
+
+
+/* Work section Psuedo classes (higlight hover) */
+.surf-report:hover {
+    background-image: url(../images/surf-report.jpg);
+}
+
+.led-wall:hover {
+    background-image: url(../images/LED-wall-red.jpeg);
+}
+
+.calculator:hover {
+    background-image: url(../images/web-calculator.jpg);
+}
+
+.pastel-puzzles:hover {
+    background-image: url(../images/web-pastel-puzzles.png);
+}
+
+.run-buddy:hover {
+    background-image: url(../images/crop-screen-runbuddy.png);
 }
