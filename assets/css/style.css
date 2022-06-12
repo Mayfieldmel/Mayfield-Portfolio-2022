@@ -165,12 +165,23 @@ p {
 .text-box {
     background-color: var(--secondary-color);
     padding: 10px;
+    display:inline-block;
+    position: relative;
+    top: 30%;
+    right: 0.5%;
+}
+
+.surf-report .text-box {
+    top: 66%;
+}
+
+h4 {
+    font-weight: bolder;
 }
 
 .work-links p {
     font-size: 12px;
 }
-
 
 /* style work images */
 .led-wall, 
