@@ -177,7 +177,7 @@ article {
 }
 
 .surf-report {
-    background-image: url(../images/surf-report.jpg);
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/surf-report.jpg);
     height: 50%;
     width: 100%;
     border: 5px solid var(--secondary-color);
@@ -191,29 +191,35 @@ article {
     height: 100px;
     width: 48%;
     border: 5px solid var(--secondary-color);
+    background-size: cover;
 }
 
 .led-wall {
-    background-image: url(../images/LED-wall-red.jpeg);
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/LED-wall-red.jpeg);
 }
 
 .calculator {
-    background-image: url(../images/crop-calculator.png);
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-calculator.jpg);
 }
 
 .pastel-puzzles {
-    background-image: url(../images/crop-pastel-puzzles.png);
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/web-pastel-puzzles.png);
 }
 
 .run-buddy {
-    background-image: url(../images/crop-screen-runbuddy.png);
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/crop-screen-runbuddy.png);
 }
 
 .text-box {
     background-color: var(--secondary-color);
     padding: 10px;
     position: relative;
-    bottom: 0px;
+    top: 25px;
+    right: 12px;
+}
+
+.surf-report .text-box {
+    top: 150px;
 }
 
 /* style Contact Me section */
@@ -230,3 +236,25 @@ footer ul {
     align-items: center;
     padding-left: 20px;
 }
+
+/* Work section Psuedo classes (higlight hover) */
+.surf-report:hover {
+    background-image: url(../images/surf-report.jpg);
+}
+
+.led-wall:hover {
+    background-image: url(../images/LED-wall-red.jpeg);
+}
+
+.calculator:hover {
+    background-image: url(../images/web-calculator.jpg);
+}
+
+.pastel-puzzles:hover {
+    background-image: url(../images/web-pastel-puzzles.png);
+}
+
+.run-buddy:hover {
+    background-image: url(../images/crop-screen-runbuddy.png);
+}
+
