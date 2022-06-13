@@ -247,3 +247,18 @@ h4 {
     margin: 20px;
 }
 
+@media screen and (max-width: 575px) {
+    header {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: none;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+    
+}
