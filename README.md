@@ -2,7 +2,7 @@
 
  This repo houses the assets used to build my portfolio website, available at https://mayfieldmel.github.io/Mayfield-Portfolio-2022/ .
 
- ![Portfolio-Screenshot](./assets/images/web_version.png "Mayfield Portfolio")
+ ![Portfolio-Screenshot](./assets/images/portfolio-2022-screen-shot "Mayfield Portfolio")
 
  ## My Portfolio
 
