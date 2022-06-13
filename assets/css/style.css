@@ -1,7 +1,7 @@
 /* universal selectors & page styles */
 :root {
     --main-bg-color: #ebebf5;
-    --primary-color:#2f2f40;
+    --primary-color:#343d54;
     --secondary-color:#abe0e0;
 }
 
@@ -79,7 +79,6 @@ header nav ul li a {
 .portrait {
     width: 225px;
     height: 245px;
-    text-align: right;
     margin: 20px 0px 20px 65px;
     position: relative;
     right: 10px;
@@ -235,6 +234,7 @@ h4 {
 .footer-content {
     flex: 4 80%;
 }
+
 .footer-content ul {
     display: flex;
     flex-wrap: wrap;
@@ -269,22 +269,113 @@ h4 {
         text-align: center;
         padding-right: 0;
     }
+
+    header nav {
+        width: 100%;
+    }
+
     header nav ul {
-        padding-right: 0;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+
+    header nav ul li {
+        padding: 10px 5px;
+    }
+    
+    .hero {
+        flex-direction: block;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+    }
+
+    .portrait {
+        right: 30px;
+    }
+
+    .hero h2 {
+        position: unset;
+        margin: 0 0 5px 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    footer .section-header {
+        border-bottom: 3px solid var(--primary-color);
+        border-right: none;
+        text-align: center;
     }
 }
 
 /* screens 575 & under (mobile phones) */
 @media screen and (max-width: 575px) {
-    header {
-        background-color: var(--primary-color);
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: auto;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 9999;
+
+    .hero {
+        background-image: linear-gradient(rgba(67,90,153, 0.5), rgba(67,90,153, 1.0));
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section-header {
+        border-bottom: 3px solid var(--primary-color);
+        border-right: none;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+
+    .section-content {
+        padding: 5px;
+    }
+
+    .section article {
+        padding-left: 0;
+    }
+
+    .section-content ul {
+        display: block;
+        margin: 0;
+    }
+
+    .section-content ul li {
+        width: 100%;
+        height: 100px;
+    }
+
+    .surf-report {
+        height: 100px;
+    }
+
+    .surf-report .text-box {
+        top: 30%;
+    }
+
+    footer {
+        position: relative;
+        bottom: -220px;
+    }
+
+    footer .section-header {
+        text-align: left;
+    }
+    
+    .footer-content ul {
+        flex-direction: column;
+    }
+    
+    .footer-content ul li {
+        margin: 5px 0;
+    }
+
+    .footer-content ul li a {
+        padding: 5px 0;
     }
 }
