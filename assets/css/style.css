@@ -245,19 +245,46 @@ h4 {
     margin: 20px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 980) {
+/* MEDIA QUERIES */
+
+/* screens 980 & under */
+@media screen and (max-width: 980px) {
     .footer-content ul {
-        justify-content: none;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 768) {
+/* screeens 768 & under */
+@media screen and (max-width: 768px) {
     header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
-        
+    }
+
+    header h1 {
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    header nav ul {
+        padding-right: 0;
+    }
+}
+
+/* screens 575 & under (mobile phones) */
+@media screen and (max-width: 575px) {
+    header {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
     }
 }
