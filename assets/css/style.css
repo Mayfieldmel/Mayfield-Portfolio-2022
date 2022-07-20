@@ -135,8 +135,8 @@ p {
     padding: 0;
 }
 
-.surf-report {
-    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/surf-report.jpg);
+.food-for-thought {
+    background-image: linear-gradient(rgba(112, 128, 144, 0.4),rgba(112, 128, 144, 0.4)), url(../images/food-for-thought.png);
     border: 5px solid var(--secondary-color);
     background-size: cover;
     height: 200px;
