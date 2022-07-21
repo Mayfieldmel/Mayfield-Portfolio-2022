@@ -206,8 +206,8 @@ h4 {
 
 
 /* Work section Psuedo classes (higlight hover) */
-.surf-report:hover {
-    background-image: url(../images/surf-report.jpg);
+.food-for-thought:hover {
+    background-image: url(../images/food-for-thought.png);
 }
 
 .led-wall:hover {
@@ -346,11 +346,11 @@ h4 {
         height: 100px;
     }
 
-    .surf-report {
+    .food-for-thought {
         height: 100px;
     }
 
-    .surf-report .text-box {
+    .food-for-thought .text-box {
         top: 30%;
     }
 
