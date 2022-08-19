@@ -17,7 +17,7 @@ My portfolio offers a brief overview of who I am and what I can do. Explore the 
 
 ## Website content
 
-The content for the Horiseon website is in the "index.html" file on the repository's main branch.
+The content for the website is in the "index.html" file on the repository's main branch.
 
 ## CSS
 
